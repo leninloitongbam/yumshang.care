@@ -3,6 +3,9 @@ tasks:
       nvm install $(jq -r .engines.node package.json) &&
       curl https://install.meteor.com/ | sh &&
       export PATH="$PATH:$HOME/.meteor" &&
+      curl -fsSL https://deno.land/x/install/install.sh | sh &&
+      export DENO_INSTALL="/home/gitpod/.deno" &&
+      export PATH="$DENO_INSTALL/bin:$PATH" &&
       yarn &&
       export ROOT_URL=$(gp url 3000)
     command: yarn build && yarn dev
