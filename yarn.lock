@@ -9069,7 +9069,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rocket.chat/fuselage-ui-kit@workspace:^, @rocket.chat/fuselage-ui-kit@workspace:packages/fuselage-ui-kit, @rocket.chat/fuselage-ui-kit@workspace:~":
+"@rocket.chat/fuselage-ui-kit@npm:latest":
+  version: 0.31.23
+  resolution: "@rocket.chat/fuselage-ui-kit@npm:0.31.23"
+  dependencies:
+    "@rocket.chat/ui-kit": ^0.31.23
+  peerDependencies:
+    "@rocket.chat/fuselage": "*"
+    "@rocket.chat/fuselage-hooks": "*"
+    "@rocket.chat/fuselage-polyfills": "*"
+    "@rocket.chat/icons": "*"
+    "@rocket.chat/styled": "*"
+    react: ^17.0.2
+    react-dom: ^17.0.2
+  checksum: 48a7009c08196c81d8db0752b06ecc47c0b89e372530c92fb44272510fd84fb542e1b83b0da677438236a111e9cc9d0a58fe6c56b016ce59b0b96ec97501fc4f
+  languageName: node
+  linkType: hard
+
+"@rocket.chat/fuselage-ui-kit@workspace:packages/fuselage-ui-kit":
   version: 0.0.0-use.local
   resolution: "@rocket.chat/fuselage-ui-kit@workspace:packages/fuselage-ui-kit"
   dependencies:
@@ -9547,7 +9564,7 @@ __metadata:
     "@rocket.chat/fuselage-polyfills": ~0.31.25
     "@rocket.chat/fuselage-toastbar": ^0.33.0
     "@rocket.chat/fuselage-tokens": ^0.33.1
-    "@rocket.chat/fuselage-ui-kit": "workspace:^"
+    "@rocket.chat/fuselage-ui-kit": latest
     "@rocket.chat/gazzodown": "workspace:^"
     "@rocket.chat/i18n": "workspace:^"
     "@rocket.chat/icons": ~0.38.0
@@ -10578,6 +10595,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@rocket.chat/ui-kit@npm:^0.31.23":
+  version: 0.31.25
+  resolution: "@rocket.chat/ui-kit@npm:0.31.25"
+  peerDependencies:
+    "@rocket.chat/icons": "*"
+  checksum: 11ecd99c513f55eda7fae5a0247b91047c98e16d6571fb8fb6bf739df2f00a4b584f89ad117259196f5525340c101fe7093e6b685382a3efff54abcb99383d93
+  languageName: node
+  linkType: hard
+
 "@rocket.chat/ui-kit@workspace:packages/ui-kit, @rocket.chat/ui-kit@workspace:~":
   version: 0.0.0-use.local
   resolution: "@rocket.chat/ui-kit@workspace:packages/ui-kit"
@@ -10696,7 +10722,7 @@ __metadata:
     "@rocket.chat/fuselage-polyfills": ~0.31.25
     "@rocket.chat/fuselage-toastbar": ^0.33.0
     "@rocket.chat/fuselage-tokens": ^0.33.1
-    "@rocket.chat/fuselage-ui-kit": "workspace:~"
+    "@rocket.chat/fuselage-ui-kit": latest
     "@rocket.chat/icons": ~0.38.0
     "@rocket.chat/logo": ^0.31.30
     "@rocket.chat/styled": ~0.31.25
