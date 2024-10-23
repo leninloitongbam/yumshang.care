@@ -1,6 +1,7 @@
 tasks:
   - init: |
-      nvm install $(jq -r .engines.node package.json) &&
+      # nvm install $(jq -r .engines.node package.json)
+      nvm install 14.21.3 && nvm use 14.21.3 &&
       curl https://install.meteor.com/?release=2.12 | sh &&
       export PATH="$PATH:$HOME/.meteor" &&
       curl -fsSL https://deno.land/x/install/install.sh | sh &&
