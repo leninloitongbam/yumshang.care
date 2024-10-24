@@ -1,7 +1,6 @@
 tasks:
   - init: |
       # nvm install $(jq -r .engines.node package.json)
-      nvm install 14.21.3 && nvm use 14.21.3 &&
       curl https://install.meteor.com/?release=2.12 | sh &&
       export PATH="$PATH:$HOME/.meteor" &&
       curl -fsSL https://deno.land/x/install/install.sh | sh &&
@@ -10,7 +9,7 @@ tasks:
       export NODE_OPTIONS="--max-old-space-size=4096" &&
       yarn &&
       export ROOT_URL=$(gp url 3000)
-    command: yarn build && yarn dev
+    command: nvm install 14.21.3 && nvm use 14.21.3 && yarn build && yarn dev
 
 ports:
   - port: 3000
